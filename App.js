@@ -1,5 +1,5 @@
 import { NativeBaseProvider, theme } from "native-base";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import LoginPage from "./components/LoginPage.jsx";
 
 export default function App() {
