@@ -3,11 +3,15 @@ import { Text, StyleSheet } from 'react-native';
 import { Button, Center, HStack, Input, VStack, Image } from 'native-base';
 import PageHeader from './PageHeader';
 import { login } from '../utills/api';
+import { useFonts } from "expo-font";
 
 const LoginPage = () => {
 
-    const googleIcon = require('../assets/googleIcon.svg')
-    const linkdinIcon = require('../assets/linkdinIcon.svg')
+    const googleIcon = require('../assets/image/googleIcon.svg')
+    const linkdinIcon = require('../assets/image/linkdinIcon.svg')
+    // const IranSans = useFonts({
+    //     IranSans: require('../assets/fonts/IRANSans.ttf')
+    // })
 
     const [phoneEmail, setPhoneEmail] = useState("")
     const [password, setPasswordd] = useState("")
@@ -52,7 +56,7 @@ const LoginPage = () => {
                     <Text>─────────</Text>
                 </HStack>
                 <Text style={{
-                    marginLeft: '98px', marginTop: '14px', fontFamily: 'IranSans',
+                    marginLeft: '98px', marginTop: '14px', fontFamily: 'IRANSansMobile',
                     fontStyle: 'normal',
                     fontWeight: '400',
                     fontSize: '13px',
@@ -109,7 +113,7 @@ const LoginPage = () => {
 };
 const styles = StyleSheet.create({
     text: {
-        fontFamily: 'IranSans',
+        fontFamily: 'IRANSansMobile',
         marginTop: '23px',
         fontWeight: '400',
         fontStyle: 'normal',
@@ -132,14 +136,14 @@ const styles = StyleSheet.create({
 
     },
     buttonText: {
-        fontFamily: 'IranSans',
+        fontFamily: 'IRANSansMobile',
         fontStyle: 'normal',
         fontWeight: '400',
         fontSize: '17px',
         lineHeight: '25px',
     },
     placeholderfont: {
-        fontFamily: 'IranSans',
+        fontFamily: 'IRANSansMobile',
         fontWeight: '400px',
         fontSize: '13px',
         borderColor: '#aaaaaa'

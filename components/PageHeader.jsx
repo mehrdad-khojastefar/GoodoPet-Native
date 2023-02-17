@@ -7,8 +7,7 @@ import { Ionicons, Entypo } from '@expo/vector-icons';
 
 const PageHeader = () => {
 
-    const headerIcon = require("../assets/headerIcon.svg")
-    const searchIcon = require("../assets/searchIcon.svg")
+    const headerIcon = require("../assets/image//headerIcon.svg")
 
 
     return (
@@ -64,7 +63,7 @@ const styles = StyleSheet.create({
         marginTop: '3px'
     },
     placeholderfont: {
-        fontFamily: 'IRANSans',
+        fontFamily: 'IRANSansMobile',
         fontWeight: '400px',
         fontSize: '13px'
     }
